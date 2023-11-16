@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This calculator application is created by Game Development students Jerickson Mayor, Jeremy Devis, Ivan Joshua Arsua, and Mark Justine Balisi. It is a functional and user-friendly tool designed for efficient mathematical calculations. With a clean and intuitive interface, it provides essential arithmetic operations, making it a handy utility for users in various academic settings."
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sf_display_regular"
+        android:textColor="?android:textColor"
+        android:paddingTop="100dp" />
+
+</RelativeLayout>

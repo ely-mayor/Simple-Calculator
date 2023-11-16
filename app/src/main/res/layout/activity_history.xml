@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Add a TextView for empty history -->
+    <TextView
+        android:id="@+id/emptyHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_display_regular"
+        android:textSize="20dp"
+        android:text="No Calculation History"
+        android:visibility="gone" />
+
+    <!-- Button at the bottom, centered horizontally -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_height="75dp"
+        android:layout_width="75dp"
+        android:fontFamily="@font/sf_display_medium"
+        android:includeFontPadding="false"
+        android:antialias="true"
+        android:text="X"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:textColor="#FDF9F6"
+        app:cornerRadius="40dp"
+        android:backgroundTint="#FFA00A"
+        />
+
+</RelativeLayout>
