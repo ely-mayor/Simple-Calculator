@@ -26,7 +26,7 @@
         android:fontFamily="@font/sf_display_thin"
         android:includeFontPadding="false"
         android:maxLines="1"
-        android:paddingRight="50dp"
+        android:paddingRight="25dp"
         android:paddingLeft="25dp"
         android:text="0"
         android:textAlignment="textEnd"
